@@ -1,0 +1,30 @@
+import type {WeddingConfig} from "./wedding";
+
+// Nội dung mặc định của thiệp NHÀ TRAI. Sau khi kết nối Google Sheets có thể sửa trong trang quản lý.
+export const defaultWedding: WeddingConfig = {
+  side: "nha-trai",
+  groom: "Việt Hưng",
+  bride: "Khánh Thuỳ",
+  groomFull: "Việt Hưng",
+  brideFull: "Khánh Thuỳ",
+  groomFather: "Trần Phúc Lợi",
+  groomMother: "Trần Thị Huyền Chân",
+  brideFather: "Bùi Quang Tuyến",
+  brideMother: "Nguyễn Thị Lan Anh",
+  ceremonyTitle: "Lễ Thành Hôn",
+  date: "2026-11-14",
+  ceremonyTime: "11:00",
+  lunarDate: "06 tháng 10 năm Bính Ngọ",
+  ceremonyVenue: "Trung tâm tiệc cưới Sen Vàng Palace",
+  ceremonyHall: "Tầng 3 · Sảnh Kim Cương",
+  ceremonyAddress: "Số 1089 Đại lộ Hùng Vương, Phường Việt Trì, Tỉnh Phú Thọ",
+  receptionTitle: "",
+  receptionDate: "",
+  receptionTime: "",
+  receptionLunar: "",
+  receptionVenue: "",
+  receptionHall: "",
+  receptionAddress: "",
+  city: "Việt Trì · Phú Thọ",
+  intro: "Hai gia đình chúng tôi vui mừng trân trọng báo tin Lễ Thành Hôn của con chúng tôi. Sự hiện diện của quý khách là niềm vinh hạnh cho gia đình và là lời chúc phúc quý giá nhất dành cho đôi trẻ.",
+};
