@@ -194,3 +194,5 @@ input:focus,textarea:focus,select:focus{border-color:#c79a8e;box-shadow:0 0 0 3p
 @media(max-width:600px){.couple-person small{margin-bottom:18px}}
 /* .opening-photo-caption span làm nghiêng cả dấu 囍 — giữ chữ Hỷ luôn thẳng */
 .hy-seal{font-style:normal!important;font-synthesis:none}
+/* Khách xem trên điện thoại không thấy lối vào trang quản lý */
+@media(max-width:800px){.site-footer .footer-admin{display:none}}
