@@ -5,7 +5,7 @@ import { defaultWedding, weddingDate, weddingEvents, mainEvent, hasReception, co
 import { createCalendar } from "../lib/calendar";
 import { useModal } from "../lib/use-modal";
 import {assetUrl,homeHref,managementHref,weddingFetch} from "../lib/browser-config";
-import {defaultGuestLabel,readNamedGuest,responseStorageKey,type NamedGuest} from "../lib/guest-links";
+import {defaultGuestLabel,guestTitle,readNamedGuest,responseStorageKey,type NamedGuest} from "../lib/guest-links";
 import {WeddingMusicPlayer} from "../lib/music-player";
 import {HySeal,InvitationOpening,Monogram,MusicControl} from "./invitation-opening";
 
@@ -66,7 +66,7 @@ export default function WeddingInvitation({token}:{token?:string}) {
   const d=await r.json() as {error?:string};if(!r.ok)throw new Error(d.error??"Chưa gửi được phản hồi.");setSaved(true);
  }catch(e){setError((e as Error).message??"Chưa gửi được phản hồi. Vui lòng thử lại.");}finally{setSubmitting(false);}}
  if(token&&!loading&&loadError)return <main className="missing-invite"><Mail size={42} strokeWidth={1}/><p className="eyebrow">THIỆP MỜI</p><h1>Rất mong được đón tiếp quý khách.</h1><p>{loadError}</p><a className="button primary" href={homeHref()}>Xem thiệp mời chung <ArrowRight size={16}/></a></main>;
- const guestLabel=invite?`${invite.salutation} ${invite.guestName}`:namedGuest?.name||defaultGuestLabel;
+ const guestLabel=invite?guestTitle(invite.salutation,invite.guestName):namedGuest?.name||defaultGuestLabel;
  if(!opened)return <InvitationOpening config={config} guest={guestLabel} onOpen={openInvitation} loading={loading} opening={opening}/>;
  const [first,second]=couple(config),events=weddingEvents(config),main=mainEvent(config),twoEvents=events.length>1,mainDate=prettyDate(main.date).replaceAll("/",".");
  return <div className="wedding-site invitation-reveal">

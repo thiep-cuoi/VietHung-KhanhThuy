@@ -1,5 +1,11 @@
 export type NamedGuest = {name:string;reference:string};
 export const defaultGuestLabel="Quý khách";
+// Xưng hô có chứa {tên} thì tên khách thế vào đúng chỗ đó (vd "{tên} bro" → "Lân bro"); nếu không, xưng hô đứng trước tên.
+export const NAME_SLOT="{tên}";
+export function guestTitle(salutation:string,name:string){
+ const s=salutation.trim();
+ return (s.includes(NAME_SLOT)?s.replace(NAME_SLOT,name):`${s} ${name}`).replace(/\s+/g," ").trim();
+}
 
 export function cleanGuestName(value:string){return value.normalize("NFC").replace(/[\u0000-\u001f\u007f]/g," ").replace(/\s+/g," ").trim();}
 
