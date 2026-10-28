@@ -196,3 +196,155 @@ input:focus,textarea:focus,select:focus{border-color:#c79a8e;box-shadow:0 0 0 3p
 .hy-seal{font-style:normal!important;font-synthesis:none}
 /* Khách xem trên điện thoại không thấy lối vào trang quản lý */
 @media(max-width:800px){.site-footer .footer-admin{display:none}}
+
+/* ---- Góp ý vòng 2: chữ to, nút dễ thấy cho người lớn tuổi, album 6 ảnh dạng trượt ---- */
+/* Bìa thiệp */
+.opening-screen{cursor:pointer}
+.opening-copy>.eyebrow{font-size:13px;letter-spacing:3px;font-weight:700;color:#8a6448}
+.opening-copy h1{font-size:68px}
+.opening-photo-caption span{font-size:19px}
+.opening-date{font-size:24px;color:#6f4c40}
+.opening-guest>small{font-size:12px;letter-spacing:2.5px;font-weight:600;color:#8a7068}
+.opening-guest>strong{font-size:28px;color:var(--ink)}
+.opening-button{min-width:300px;min-height:66px;padding:14px 38px;font-size:19px;font-weight:600;letter-spacing:.4px;border-radius:40px;border:2px solid #e3be83;animation:open-pulse 2.2s ease-in-out infinite}
+.opening-button:disabled{animation:none}
+@keyframes open-pulse{0%{box-shadow:0 10px 28px #8e1f2459,0 0 0 0 #8e1f2470}70%{box-shadow:0 10px 28px #8e1f2459,0 0 0 16px #8e1f2400}100%{box-shadow:0 10px 28px #8e1f2459,0 0 0 0 #8e1f2400}}
+.opening-tap-hint{display:flex;align-items:center;gap:8px;margin-top:18px;font-size:15px;font-weight:500;color:#7d5c55}
+.opening-sound-note{font-size:13px;margin-top:8px}
+/* Mặt trong: chữ */
+.wedding-site{font-size:16px}
+.wedding-site .eyebrow{font-size:12px;letter-spacing:2.6px}
+.site-header .brand-word{font-size:12px}.site-header .brand-word small{font-size:11px}
+.nav>button:not(.button){font-size:15px}
+.nav .nav-cta{font-size:14px;font-weight:600;min-height:46px;padding:10px 20px;background:var(--crimson);color:#fff8ef;border-color:var(--crimson);border-radius:30px}
+.wedding-site .hero-copy .eyebrow{font-size:12px;letter-spacing:2.6px}
+.hero-intro{font-size:21px}
+.guest-greeting>span{font-size:11px;letter-spacing:2.5px}
+.guest-greeting strong{font-size:28px}
+.guest-greeting p{font-size:15px;max-width:420px;color:#7f6c66}
+.hero-bottom{font-size:12px}
+.photo-caption{font-size:17px}
+.hero-photo-secondary>div{font-size:11px}.hero-photo-secondary em{font-size:14px}
+.scroll-cue{font-size:11px}
+.announce-sub{font-size:20px}
+.family-row span{font-size:12px}
+.family-row p,.family-row p:first-of-type{font-size:19px}
+.couple-person small{font-size:12px}
+.intro-body{font-size:17px;line-height:2;max-width:680px;color:#6f5751}
+.section-aside{font-size:15px}
+.journey-date{font-size:12px}
+.journey-card>p{font-size:15px;color:#6f5f5a;max-width:320px}
+.event-date{font-size:26px}
+.lunar-date{font-size:16px}
+.countdown span{font-size:11px;letter-spacing:2px}
+.event-card{padding:36px 32px 34px}
+.event-card .eyebrow{font-size:14px;font-weight:700;letter-spacing:3px}
+.event-day{font-size:20px}
+.event-lunar{font-size:15px}
+.event-card h3{font-size:26px}
+.event-hall{font-size:16px}
+.event-card>p.event-address{font-size:16px;max-width:360px}
+.rsvp-copy>p:not(.eyebrow){font-size:16px;max-width:400px;color:#6f5f5a}
+.rsvp-note{font-size:14px;max-width:380px}
+.wedding-site label,.wedding-site legend{font-size:15px}
+.wedding-site label>small{font-size:12px}
+.wedding-site input,.wedding-site textarea,.wedding-site select{font-size:16px;padding:13px 14px}
+.wedding-site .choice{font-size:15px;padding:13px 16px;gap:8px}
+.wedding-site .choice svg{width:18px;height:18px}
+.form-footnote{font-size:13px}
+.rsvp-success .eyebrow{font-size:12px}.rsvp-success>p:not(.eyebrow){font-size:16px}
+.closing-section>p{font-size:15px}
+.closing-section .text-button{font-size:15px}
+.site-footer,.site-footer a{font-size:13px}
+.toast{font-size:15px}
+.lightbox-count{font-size:15px}
+.music-tooltip{font-size:12px}
+/* Mặt trong: các nút hành động */
+.hero-actions{gap:14px;flex-wrap:wrap}
+.hero-actions .button{min-height:58px;padding:14px 28px;font-size:16px;font-weight:600;border-radius:40px}
+.hero-secondary{border:2px solid var(--crimson);color:var(--crimson);background:#fff}
+.hero-secondary:hover{background:#fbefe9}
+.map-link{display:inline-flex;margin-top:22px;padding:12px 24px;min-height:50px;border-radius:40px;background:var(--crimson);color:#fff8ef;font-size:15px;font-weight:600;gap:9px}
+.map-link:hover{text-decoration:none;background:#a5282e}
+.calendar-button{font-size:15px;font-weight:600;min-height:54px;padding:12px 26px;border-radius:40px;border-width:2px}
+.wedding-site .submit-button{min-height:58px;font-size:17px;font-weight:600;border-radius:40px}
+.floating-rsvp{font-size:15px;font-weight:600;padding:15px 22px;border-width:2px}
+.floating-rsvp svg{width:20px;height:20px}
+/* Album: thanh trượt 6 ảnh */
+.gallery-slider{position:relative;margin-top:26px}
+.slider-track{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:10px 0 18px;position:relative;overscroll-behavior-x:contain}
+.slider-track::-webkit-scrollbar{display:none}
+.slider-track::before,.slider-track::after{content:'';flex:0 0 calc(34% - 18px)}
+.slide{flex:0 0 32%;aspect-ratio:2/3;scroll-snap-align:center;position:relative;padding:0;border:6px solid #fff;background:#fff;box-shadow:0 10px 30px #66141914;overflow:hidden;opacity:.55;transform:scale(.92);transition:opacity .35s,transform .35s}
+.slide.active{opacity:1;transform:none;box-shadow:0 16px 40px #6614192e}
+.slide img{width:100%;height:100%;object-fit:cover;object-position:50% 35%}
+.slide.g-08 img{object-position:76% 50%}
+.slide>span{position:absolute;right:12px;bottom:12px;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#fbf6eee6;color:var(--crimson);opacity:0;transition:opacity .2s}
+.slide.active>span{opacity:1}
+.slider-nav{position:absolute;top:calc(50% - 4px);transform:translateY(-50%);z-index:2;display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:var(--crimson);color:#fff8ef;border:2px solid #e3be83;box-shadow:0 8px 22px #66141940}
+.slider-nav:hover{background:#a5282e}.slider-nav.prev{left:8px}.slider-nav.next{right:8px}
+.slider-dots{display:flex;justify-content:center;gap:10px;margin-top:6px}
+.slider-dots button{width:12px;height:12px;border-radius:6px;padding:0;background:#dcc6b6;transition:width .25s,background .25s}
+.slider-dots button.active{width:32px;background:var(--crimson)}
+.slider-hint{text-align:center;font-size:14px;color:#8a6a5e;margin-top:14px}
+@media(max-width:800px){.slide{flex-basis:46%}.slider-track::before,.slider-track::after{flex-basis:calc(27% - 18px)}}
+@media(max-width:600px){
+ .opening-photo{padding:20px 24px 14px}
+ .opening-photo>img{max-height:31svh}
+ .opening-photo-caption{margin-top:12px}.opening-photo-caption span{font-size:15px}
+ .opening-copy{padding:16px 20px 24px}
+ .opening-logo{display:none}
+ .opening-copy>.eyebrow{font-size:12px;letter-spacing:2px}
+ .opening-copy h1{font-size:46px;margin-top:10px}
+ .opening-date{font-size:20px}
+ .opening-guest{padding:12px 0 16px}
+ .opening-guest>small{font-size:12px}
+ .opening-guest>strong{font-size:24px}
+ .opening-button{width:100%;max-width:340px;min-width:0;min-height:62px;font-size:19px}
+ .opening-tap-hint{font-size:14px;margin-top:14px}
+ .wedding-site .eyebrow{font-size:11px;letter-spacing:2px}
+ .wedding-site .hero-copy .eyebrow{font-size:11px;letter-spacing:1.6px}
+ .menu-toggle{width:46px;height:46px}.menu-toggle svg{width:28px;height:28px}
+ .nav>button:not(.button){font-size:17px}
+ .hero-intro{font-size:19px}
+ .guest-greeting strong{font-size:26px}
+ .guest-greeting p{font-size:15px;max-width:300px}
+ .hero-actions{flex-direction:column;align-items:stretch;gap:12px;max-width:340px;margin-left:auto;margin-right:auto}
+ .hero-actions .button{width:100%;font-size:17px;min-height:58px}
+ .hero-bottom{font-size:12px}
+ .scroll-cue{font-size:10px}
+ .announce-sub{font-size:17px}
+ .intro-section .family-row{flex-direction:column;gap:22px}
+ .family-row p,.family-row p:first-of-type{font-size:18px}
+ .intro-body{font-size:16px}
+ .section-aside{font-size:14px}
+ .journey-card>p{font-size:15px}
+ .event-date{font-size:21px}
+ .lunar-date{font-size:14px}
+ .countdown span{font-size:10px}
+ .event-card{padding:30px 22px}
+ .event-card h3{font-size:24px}
+ .event-card>p.event-address{font-size:15px}
+ .rsvp-copy>p:not(.eyebrow){font-size:15px}
+ .rsvp-note{font-size:13px}
+ .wedding-site .choice{flex:1 1 100%;font-size:16px;padding:14px 16px}
+ .rsvp-form-card .form-two{grid-template-columns:1fr;gap:0}
+ .wedding-site .floating-rsvp{padding:13px 18px;font-size:15px}
+ .wedding-site .floating-rsvp span{display:inline}
+ .music-widget{bottom:86px}
+ .slider-track{gap:12px}.slide{flex-basis:76%;border-width:4px}
+ .slider-track::before,.slider-track::after{flex-basis:calc(12% - 12px)}
+ .slider-nav{width:46px;height:46px}.slider-nav.prev{left:0}.slider-nav.next{right:0}
+ .slider-hint{font-size:13px}
+}
+/* Thanh trượt: máy tính 3 ảnh liền nhau, máy tính bảng 2 ảnh, điện thoại 1 ảnh ở giữa */
+.slider-track::before,.slider-track::after{display:none}
+.slide{flex-basis:calc((100% - 36px)/3);scroll-snap-align:start}
+@media(max-width:800px){.slide{flex-basis:calc((100% - 18px)/2)}}
+@media(max-width:600px){.slide{flex-basis:76%;scroll-snap-align:center}.slider-track::before,.slider-track::after{display:block;content:'';flex:0 0 calc(12% - 12px)}}
+/* Nút nổi chỉ hiện sau khi cuộn qua phần đầu; nút nhạc tụt xuống khi nút nổi ẩn */
+.floating-rsvp{opacity:0;pointer-events:none;transform:translateY(16px);transition:opacity .3s,transform .3s}
+.floating-rsvp.visible{opacity:1;pointer-events:auto;transform:none}
+.music-widget{bottom:24px;transition:bottom .3s}.float-on .music-widget{bottom:91px}
+@media(max-width:600px){.music-widget{bottom:16px}.float-on .music-widget{bottom:86px}}
+@media(max-width:600px){.opening-copy h1{margin-top:20px}}
