@@ -362,3 +362,4 @@ input:focus,textarea:focus,select:focus{border-color:#c79a8e;box-shadow:0 0 0 3p
 @media(max-width:600px){.opening-screen:has(.logo-img) .opening-photo>img{max-height:25svh}.opening-screen:has(.logo-img) .opening-photo{padding-top:16px}.logo-img.opening-logo img{height:50px}}
 /* Điện thoại màn thấp (iPhone SE/8): thu gọn bìa để nút Mở thiệp không bị khuất */
 @media(max-width:600px) and (max-height:740px){.opening-screen .opening-photo>img,.opening-screen:has(.logo-img) .opening-photo>img{max-height:19svh}.opening-photo{padding:12px 20px 10px}.opening-photo-caption{margin-top:8px;gap:6px}.opening-photo-caption .hy-seal{display:none}.opening-copy{padding:10px 20px 16px}.opening-copy h1{font-size:40px;margin-top:8px}.opening-rule{margin:6px 0}.opening-date{font-size:18px}.opening-guest{padding:6px 0 10px}.opening-guest>strong{font-size:22px}.logo-img.opening-logo img{height:42px}}
+@media(max-width:600px){.logo-img.opening-logo{margin-bottom:10px}}
