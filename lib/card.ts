@@ -28,3 +28,6 @@ export const defaultWedding: WeddingConfig = {
   city: "Việt Trì · Phú Thọ",
   intro: "Hai gia đình chúng tôi vui mừng trân trọng báo tin Lễ Thành Hôn của con chúng tôi. Sự hiện diện của quý khách là niềm vinh hạnh cho gia đình và là lời chúc phúc quý giá nhất dành cho đôi trẻ.",
 };
+
+// Logo riêng của thiệp (ảnh trong public/images). null = dùng chữ lồng tự động từ tên cô dâu chú rể.
+export const cardLogo: {mark:string;full:string}|null = {mark:"/images/logo-mark.webp",full:"/images/logo-full.webp"};
