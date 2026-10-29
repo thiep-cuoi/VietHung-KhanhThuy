@@ -367,3 +367,6 @@ input:focus,textarea:focus,select:focus{border-color:#c79a8e;box-shadow:0 0 0 3p
 .wedding-site h1,.wedding-site h2,.wedding-site h3,.hero-intro,.guest-greeting p,.announce-sub,.section-aside,.event-card>p.event-address,.rsvp-note,.form-footnote,.opening-photo-caption span,.missing-invite h1,.rsvp-success h3{text-wrap:balance}
 .intro-body,.rsvp-copy>p:not(.eyebrow),.journey-card>p,.rsvp-success>p:not(.eyebrow){text-wrap:pretty}
 .closing-section h2 em,.rsvp-copy h2 em{display:inline-block;text-wrap:balance}
+/* Tiêu đề hai dòng: cùng một kiểu chữ đứng, cùng một màu (đỏ son; trên nền đỏ là màu kem) */
+.hero h1,.hero h1 em,.journey-section h2,.journey-section h2 em,.rsvp-copy h2,.rsvp-copy h2 em,.closing-section h2,.closing-section h2 em{color:var(--crimson);font-style:normal}
+.event-section h2,.event-section h2 em{color:#fff8ee;font-style:normal}
