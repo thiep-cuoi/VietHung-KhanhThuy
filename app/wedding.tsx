@@ -26,7 +26,7 @@ export default function WeddingInvitation({token}:{token?:string}) {
  useEffect(()=>{musicAlive.current=true;return()=>{musicAlive.current=false;musicRef.current?.dispose();musicRef.current=null;if(openingTimer.current)clearTimeout(openingTimer.current);};},[]);
  useEffect(()=>{if(opened)invitationHeading.current?.focus({preventScroll:true});},[opened]);
  async function playMusic(){
-  if(!musicRef.current)musicRef.current=new WeddingMusicPlayer(assetUrl("/audio/50-nam-ve-sau.mp3"),Math.max(.05,Math.min(1,window.WEDDING_SITE?.musicVolume??.55)),Math.max(1,Math.min(30,window.WEDDING_SITE?.musicFadeSeconds??8)));
+  if(!musicRef.current)musicRef.current=new WeddingMusicPlayer(assetUrl("/audio/chi-can-co-nhau.mp3"),Math.max(.05,Math.min(1,window.WEDDING_SITE?.musicVolume??.55)),Math.max(1,Math.min(30,window.WEDDING_SITE?.musicFadeSeconds??8)));
   const attempt=++musicRequest.current;setMusicPending(true);const pending=musicRef.current.play();const ok=await pending;if(musicAlive.current&&attempt===musicRequest.current){setMusicPlaying(ok);setMusicError(!ok);setMusicPending(false);}
  }
  function openInvitation(){
